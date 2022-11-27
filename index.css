@@ -24,16 +24,14 @@ padding : 0;
 margin: 0;
 color: #fff;
 text-shadow: 0 2px 0 rgba(0,0,0,0.5);
-font-size: 60px;
-max-height: fit-content;
+font-size: 40px;
 }
 
 .cover-content p {
   color: #fff;
   font-size: 22px;
   /* margin: 0; */
-  line-height:  35px;
-  max-height: fit-content;
+  line-height:  25px;
 }
 
 .cover-content a {
@@ -46,15 +44,15 @@ max-height: fit-content;
   margin-top: 30px;
 }
 
-span::before{
+.animated::before{
   content: " ";
-  animation: animate 8s infinite 8s ease-in-out;
+  animation: animate infinite 8s ease-in-out;
 }
 
 @keyframes animate {
 
   0% {
-    content: 'Learner';
+    content: 'Programmer';
   }
   25% {
     content: 'Designer';
