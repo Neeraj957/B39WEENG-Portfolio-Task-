@@ -22,9 +22,10 @@
 .cover-content h2 {
 padding : 0;
 margin: 0;
-color:#fff;
+color: #fff;
 text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 font-size: 60px;
+max-height: fit-content;
 }
 
 .cover-content p {
@@ -32,6 +33,7 @@ font-size: 60px;
   font-size: 22px;
   /* margin: 0; */
   line-height:  35px;
+  max-height: fit-content;
 }
 
 .cover-content a {
@@ -184,7 +186,7 @@ hr {
 
 /*so it doesn't effect the smaller screen wrapped under media screen*/
 
-@media (min-width:779px) {
+@media (min-width:360px) {
 
   /* .navbar {
       padding: 0;
@@ -226,4 +228,3 @@ hr {
 
 
 
-/*  */
