@@ -1,0 +1,229 @@
+/* cover div padding and margin */
+
+ .cover {
+  /* margin: 0 ;
+  padding: 0; */
+  background-image: url(/img/Cover.jpg);
+  -webkit-background-size: cover;
+  background-size : cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: monospace;
+  height: 100vh;
+ }
+
+ .cover-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover-content h2 {
+padding : 0;
+margin: 0;
+color:#fff;
+text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+font-size: 60px;
+}
+
+.cover-content p {
+  color: #fff;
+  font-size: 22px;
+  /* margin: 0; */
+  line-height:  35px;
+}
+
+.cover-content a {
+  background: crimson;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+span::before{
+  content: " ";
+  animation: animate 8s infinite 8s ease-in-out;
+}
+
+@keyframes animate {
+
+  0% {
+    content: 'Learner';
+  }
+  25% {
+    content: 'Designer';
+  }
+  50% {
+    content: 'Developer';
+  }
+  75% {
+    content: 'Freelancer';
+  }
+  100% {
+    content: 'Photographer';
+  }
+}
+
+/* Thin out the headings */
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .section-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  .gradient-custom {
+    
+    /* fallback for old browsers */
+    background: #89f7fe;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(137,247,254,0.5), rgba(102,166,255,0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(137,247,254,0.5), rgba(102,166,255,0.5))
+            }
+
+
+  /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 2rem;
+      margin-bottom: .5rem;
+    }
+  }
+/* ------------------------------------------- */
+
+  /* section heading margin */
+
+  @media (min-width: 40em) {
+
+    .section-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .section-heading {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+
+    }
+  }
+
+
+  /* horizontal divider  */
+
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  
+/* skills images */
+
+.logo-icon {
+    max-width: 200px;
+    width:50%;
+}
+
+.hero {
+  border-radius: 50%;
+ max-width: 100%;
+ width: 250px;
+  margin-top: 25px;
+}
+
+.socials {
+  margin-top: 80px;
+}
+
+.card {
+  padding: 5px;
+}
+
+.head-logo{
+
+  padding-left: 5px;
+
+}
+
+.row-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.intro-para{
+  margin-bottom: 0;
+  margin-top: 0;}
+
+/* and underline on hover  */
+
+/*so it doesn't effect the smaller screen wrapped under media screen*/
+
+@media (min-width:779px) {
+
+  /* .navbar {
+      padding: 0;
+  } */
+
+  .navbar .navbar-nav .nav-link {
+      padding: 1em 0;
+  }
+
+  .navbar .navbar-nav .nav-item {
+      margin: 0 1em;
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after{
+  content : '';
+  opacity: 0;
+  transition:all 0.5s;
+  height: 4px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  opacity: 1;
+  width: 100%;
+  background-color: white;
+}
+
+
+
+
+/*  */
