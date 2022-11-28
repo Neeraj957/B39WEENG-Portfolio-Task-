@@ -52,26 +52,19 @@ text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 
 .animated::before{
   content: " ";
-  animation: animate infinite 8s ease-in-out;
+  animation: animate infinite 3s ease-in-out;
 }
 
 @keyframes animate {
 
   0% {
-    content: 'Programmer';
-  }
-  25% {
     content: 'Designer';
   }
   50% {
     content: 'Developer';
   }
-  75% {
-    content: 'Freelancer';
-  }
   100% {
-    content: 'Photographer';
-  }
+    content: 'Freelancer';
 }
 
 /* Thin out the headings */
