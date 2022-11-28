@@ -52,7 +52,7 @@ text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 
 .animated::before{
   content: " ";
-  animation: animate infinite 3s ease-in-out;
+  animation: animate infinite 4s ease-in-out;
 }
 
 @keyframes animate {
